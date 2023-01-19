@@ -1,0 +1,2029 @@
+@media (min-width: 1024px) {
+    @font-face {
+        font-family: 'segoe';
+        src: url(./font/segoesc.ttf);
+        
+    }
+    @font-face {
+        font-family: 'hrc';
+        src: url(./font/HKGrotesk-Regular.woff);
+    }
+    @font-face {
+        font-family: 'jul';
+        src: url(./font/JuliusSansOne-Regular.ttf);
+    }
+    
+    .App{
+        width: 100%;
+    overflow: hidden;
+    background-color: #f0f0ef;
+    height: 4000%;
+    scroll-behavior: smooth;
+    }
+    .preloader{
+        background: #000;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+    .preloader span{
+        font-family: 'jul';
+        color: #dad9dc;
+        font-size: 2rem;
+        line-height: 3rem;
+        font-weight: 400;
+    }
+    .container{
+        width: 100%;
+        display: flex;
+        height: 100vh;
+        flex-wrap: nowrap;
+    }
+    .section{
+        
+        flex: none;
+        display: flex;
+        
+       width: 100%;
+      
+        
+        
+        
+    }.two{
+        height: 120vh;
+    }
+    .logo{
+        position: fixed;
+        font-family: 'segoe';
+        font-size: 1.7vw;
+        font-weight: bolder;
+        top: 2%;
+        left: 3%;
+        z-index: 9999;
+        
+    }
+    .navbar{
+        position: fixed;
+        font-family: 'segoe';
+        font-size: 1.7vw;
+        font-weight: bolder;
+        display: flex;
+        top: 2%;
+        gap: 2vw;
+        left: 80%;
+        list-style: none;
+        z-index: 9999;
+        
+    }
+    .navbar a{
+        color: #000;
+        text-decoration-line:none ;
+    }
+    .a{
+        color: transparent;
+    }
+    .bgimg{
+        position: absolute;
+        height: 80%;
+        left: 33%;
+        top: 10%;
+    }
+    .name{
+        position: absolute;
+        font-family: 'segoe';
+        top: 28%;
+        left: 22%;
+        font-size: 7vw;
+        font-weight: bold;
+    }.midname{
+        color: #e5e3e3;
+    }
+    .dev{
+        position: absolute;
+        top: 55%;
+        left: 70%;
+        font-family: 'segoe';
+        font-size: 2vw;
+        color: #e98943;
+        font-weight: bold;
+    }.circlecontainer{
+        position: relative;
+        width: 40vw;
+        height: 40vh;
+        left: 30%;
+        top: 20%;
+        display: flex;
+        
+    }
+    .circ{
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        width: 20%;
+        height: 40%;
+        border-radius: 25%;
+
+        
+    }
+    .vidcontainer{
+       
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 25%;
+    }
+    .word1{
+        position: absolute;
+        top: -5%;
+        left: -50%;    font-family: 'hrc';
+        font-size: 8vw;
+        color: transparent;
+        z-index: 2;
+        -webkit-text-stroke: 0.06vw #f0f0ef;
+    
+        font-weight: 200;
+        letter-spacing: 0.5em;
+    }
+    .Scrolldown{
+        position: absolute;
+        color: rgb(240, 240, 239);
+        top: 85%;
+        left: 45%;
+        width: 20%;
+        height: 20%;
+        height: 20%;
+        font-family: 'jul';
+      
+        font-size: 1.4vw;
+        
+        
+    }
+    .main2{
+       
+        width: 100%;
+        height: 200vh;
+        scroll-behavior: smooth;
+    }
+    .circlework{
+        position: absolute;
+        left: 11%;
+        display: flex;
+        width: 10vw;
+        height: 18vh;
+        background: #fc4067;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+    .ab{
+        display: inline;
+       
+        font-weight: bold;
+        color: white;
+        font-family: 'jul';
+        letter-spacing: 0.1em;
+        font-weight: lighter;
+        font-size: 1.7vw;
+       
+    }
+    .write{
+        position: absolute;
+        font-family: 'hrc';
+        left: 27%;
+        font-size: 3.8vw;
+        font-weight: 400;
+        line-height: 1.1;
+        color: #373743;
+        letter-spacing: 0.09em;
+    }
+    .header1{
+        position: absolute;
+        top: 500%;
+     
+        width: 100%;
+        height: 20vh;
+        overflow: hidden;
+    }
+    .word2{
+        overflow: hidden;
+        position: absolute;
+        font-family: 'hrc';
+        font-size: 4.5vw;
+        display: flex;
+        z-index: 1;
+       
+        justify-content: right;
+       
+    }
+    .header2{
+        overflow: hidden;
+        position: absolute;
+        top: 520%;
+        width: 100%;
+        height: 20vh;
+        z-index: 1;
+    }
+    .word3{
+        overflow: hidden;
+        position: absolute;
+        top: 40%;
+        font-family: 'hrc';
+        font-size: 4.5vw;
+    
+      
+      
+    }
+    .three{
+        overflow: hidden;
+        position: absolute;
+        font-family: 'hrc';
+        font-size: 4.5vw;
+    }
+    .maccontainer{
+        position: absolute;
+        top: 250%;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    
+    }
+    .macbookpro{
+        position: absolute;
+        width: 30%;
+        top: 35%;
+        left: 40%;
+        overflow: hidden;
+        transform: scale(8);
+    }
+    .react{
+        top: 40%;
+        left: 40%;
+        position: absolute;
+        width: 3%;
+       
+     
+       opacity: 0;
+    
+    }
+    .js{
+        top: 46%;
+        left: 40%;
+        position: absolute;
+        width: 3%;
+       
+     
+       opacity: 0;
+    
+    }
+    
+    .imgcontainer{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+    }
+    .projects{
+        position: absolute;
+        
+        top: 125%;
+        width: 100%;
+        
+    }
+    .pborder{
+        position: absolute;
+        left:3%;
+        top: 133%;
+        width: 95%;
+        display: block;
+        border-bottom: 1px solid #000;
+    }
+    .pcirc{
+        position: absolute;
+        top: 130%;
+        left: 3%;
+        background-color: black;
+        height: 1.75%;
+        width: 1%;
+        border-radius: 50%;
+    }
+    .wordprojects{
+        position: absolute;
+        
+        font-size: 2vw;
+        left: 5%;
+        
+    }
+    .projectcontainer{
+        position: absolute;
+        width: 69%;
+        height: 70%;
+        top: 140%;
+        left: 31%;
+        cursor: pointer;
+        overflow-x: auto;
+        pointer-events: auto;
+        opacity:1;
+        
+    }
+    .workimgcontainer{
+        position: absolute;
+        display: flex;
+        font-family: 'jul';
+        gap: 1.6%;
+        pointer-events: none;
+        transition: 0s,ease-in;
+    }
+    .workimgsize{
+        
+       object-fit:fill;
+        width:45vw;
+       height: 57vh;
+       
+      
+     
+    }
+    .sortp{
+        position: absolute;
+        top: 150%;
+        left: 5%;
+        width: 20%;
+        
+        font-size: 1vw;
+        line-height: 0.1;
+        
+        border-bottom: 1px solid #000;
+    }
+    .sortw{
+        font-weight: bold;
+        font-family: 'hrc';
+        color:grey;
+    }
+    .imgword{
+        position: absolute;
+        top: 80%;
+        
+     
+        display: flex;
+        
+    }
+    .wordwork,.wordweb1,.wordweb2,.wordgame1,.wordgame2{
+        position: absolute;
+        top: 97%;
+    
+    }
+    .wordwork{
+        left: 1%;
+    }
+    .wordweb1{
+        left: 22%;
+        color: rgb(0, 153, 192);
+    }
+    .wordweb2{
+    left: 87%;
+   
+    color: rgb(214, 160, 109);
+    }
+    .wordgame1{
+    left:65%;
+    color: rgb(114, 198, 95);
+    }
+    .wordgame2{
+        left: 44%;
+        color: rgb(112, 43, 252);
+    }
+    .linkwork{
+        position: absolute;
+        left: 5%;
+        top: 370%;
+    }
+    .linkwork a{
+        text-decoration-line:none ;
+        color: black;
+    }
+    .linkwork span{
+        font-family: 'segoe';
+        font-size: 2rem;
+    }
+    .main3{
+        position: absolute;
+        width: 100%;
+        height: 150vh;
+        overflow: hidden;
+    }.knowmore{
+        font-family: 'segoe';
+        position: absolute;
+        top: 445%;
+        z-index: 1;
+        font-size: 1.7vw;
+        left: 46%;
+        color: rgb(0, 153, 192);
+    }
+    .Explore{
+        font-family: 'segoe';
+        position: absolute;
+        top: 450%;
+        z-index: 1;
+        font-size: 5vw;
+        color: rgb(112, 43, 252);
+        left: 45%;
+    }
+    .iphone{
+        position: absolute;
+        top: 400%;
+        width: 38%;
+        left: 3%;
+        
+        z-index: 1;
+    
+    }
+    .iphonecontainer{
+        position: absolute;
+        top: 427%;
+        z-index: 1;
+        width: 14.5%;
+        height: 49%;
+        left: 14.65%;
+        overflow: hidden;
+        background: transparent;
+        
+    }
+    .iphoneimg{
+        width: 100%;
+        height: 100%;
+       
+    
+    }
+    
+    
+    
+    .about{
+        position: absolute;
+        top: 550%;
+        background: transparent;
+        width: 100%;
+        height: 400vh;
+        overflow: hidden;
+    }
+    .profiletag{
+        position: absolute;
+        top: 10%;
+        left: 1%;
+        color: #17294d;
+        font-family: 'hrc';
+        font-size: 18vw;
+        letter-spacing: 0.2em;
+    }
+    .aboutme{
+        font-family: 'hrc';
+        left: 3%;
+        position: absolute;
+        top: 50%;
+        color: #17294d;
+        font-size: 2vw;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+    .aboutcont{
+        position: absolute;
+        width: 100%;
+        height: 50vh;
+        top: 33%;
+        display: flex;
+       
+        animation: slide 20s linear infinite; 
+    }
+    @keyframes slide {
+        0%{
+            transform: translate(0,0);
+        }
+        50%{
+            transform: translate(-60%,0);
+        }
+        100%{
+            transform: translate(3%,0);
+        }
+    }
+    .information{
+        font-family: 'hrc';
+        position: absolute;
+        font-size: 2vw;
+        color: #17294d;
+        letter-spacing: 0.1em;
+        top:70%;
+        left: 55%;
+        text-transform: uppercase;
+        font-weight: 400;
+    
+    }
+    .language{
+        font-family: 'jul';
+        position: absolute;
+        font-size: 2vw;
+        width: 100%;
+        height: 90vh;
+        color: white;
+        letter-spacing: 0.1em;
+        top:78%;
+        text-transform: uppercase;
+        font-weight: 400;
+        background: #424959;
+    }
+    .langaugeskill{
+        position: absolute;
+        top: 5%;
+        left:3%;
+    }
+    .languagecircle{
+        position: absolute;
+        font-size: 1.2vw;
+        top: 20%;
+        left:3%;
+        color: rgb(240, 240, 239);
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
+    }
+    .bar{
+        position: absolute;
+        left: 105%;
+        margin-top: -13%;
+        gap: 1vh;
+        background-color: #0f1d36;
+        width: 50vw;
+        height: 2vh;
+        border-radius: 40vw;
+    }
+    .bar1{
+        width: 0%;
+        height: 2vh;
+        background-color: #feb7b3;
+        border-radius: 40vw;
+    }
+    .bar2{
+        width: 0%;
+        height: 2vh;
+        background-color: #abff32;
+        border-radius: 40vw;
+    
+    }
+    .bar3{
+        width: 0%;
+        height: 2vh;
+        background-color: #d4ff32;
+        border-radius: 40vw;
+    }
+    .bar4{
+        width: 0%;
+        height: 2vh;
+        background-color: #e9ff32;
+        border-radius: 40vw;
+    }
+    .bar5{
+        width: 0%;
+        height: 2vh;
+        background-color: #97e5d7;
+        border-radius: 40vw;
+    }
+    .bar6{
+        width: 0%;
+        height: 2vh;
+        background-color: #d2ebdb;
+        border-radius: 40vw;
+    }
+    .bar7{
+        width: 0%;
+        height: 2vh;
+        background-color: #c1bbd0;
+        border-radius: 40vw;
+    }
+    .bar8{
+        width: 0%;
+        height: 2vh;
+        background-color: #ffdcf4;
+        border-radius: 40vw;
+    }
+    .bar9{
+        width: 0%;
+        height: 2vh;
+        background-color: #fad3cf;
+        border-radius: 40vw;
+    }
+    
+    .k{
+        position: absolute;
+        left: 7%;
+        height: 40vh;
+        width: 20vw;
+        opacity: 70%;
+        z-index: 1;
+    }
+    .k1{
+        position: absolute;
+        top: 10%;
+    
+        height: 30vh;
+        left: 26%;
+    }
+    .k2{
+        position: absolute;
+        opacity: 80%;
+        height: 40vh;
+        left: 38%;
+        z-index: 1;
+    }
+    .k3{
+        position: absolute;
+        top: 10%;
+        opacity: 80%;
+        height: 30vh;
+        width: 17vw;
+        left: 55%;
+    }
+    .k4{
+        position: absolute;
+        opacity: 80%;
+        height: 45vh;
+        left: 71%;
+        z-index: 1;
+    }
+    .k5{
+        position: absolute;
+        opacity: 80%;
+        height: 15vh;
+        top: 20%;
+        left: 88%;
+       
+    }
+    .k6{
+        position: absolute;
+        top: 10%;
+        opacity: 80%;
+        height: 25vh;
+        left: 94%;
+        
+    }
+    .k7{
+        position: absolute;
+        top: 5%;
+        width: 15vw;
+        opacity: 80%;
+        height: 35vh;
+        left: 104%;
+        z-index: 2;
+        
+    }
+    .k8{
+        position: absolute;
+        top: 20%;
+        opacity: 80%;
+        height: 15vh;
+        left: 118%;
+        z-index: 1;
+        
+    }
+    .k9{
+        position: absolute;
+        top: 25%;
+        opacity: 80%;
+        height: 10vh;
+        left: 123%;
+        
+    }
+    .k10{
+        position: absolute;
+        top: 5%;
+        opacity: 80%;
+        height: 50vh;
+        left: 127%;
+        
+    }
+    .statbox{
+        position: absolute;
+        top: 875%;
+        left: 65%;
+        border: solid 2px #17294d;
+        border-radius: 10px;
+        width: 30%;
+        height: 50%;
+    }
+    svg{
+        position: absolute;
+        left: 60%;
+        top: 25%;
+        width: 50%;
+        height: 50%;
+        
+    }
+    .statgrade{
+        position: absolute;
+        left: 80%;
+        top: 25%;
+        fill: none;
+        stroke-width: 10;
+        stroke: #000;
+        transform: translate(5px,5px);
+        stroke: #551d2e;
+        stroke-opacity: 70%;
+    }
+    .statbar{
+        position: absolute;
+        left: 50%;
+        top: 25%;
+       
+        fill: none;
+        transform: translate(5px,5px);
+        stroke-width:10;
+        stroke: #f34b7d;
+        stroke-dasharray: 442;
+        stroke-dashoffset: 442;
+        stroke-linecap: round;
+    }
+    .gradeview{
+        position: absolute;
+        top: 36%;
+        left: 71%;
+        font-size: 2.5rem;
+        font-family: 'jul';
+        font-weight: bold;
+        color: white;
+    
+    }
+    .stat{
+        position: absolute;
+        top: 2%;
+        left: 1%;
+        font-size: 1.3rem;
+        font-weight: 200;
+        color: white;
+        font-family: 'jul';
+    }
+    .projectstat{
+        position: absolute;
+        top: 25%;
+        left: 2%;
+        line-height: 200%;
+        color: lightgray;
+        font-family: 'jul';
+    }
+        
+    
+    
+    
+    .footer{
+        position: absolute;
+        top: 950%;
+        background: black;
+        width: 100%;
+        display: flex;
+        height: 30vh;
+        justify-content: center;
+    }
+    .mydef{
+        position: absolute;
+        top: 2%;
+        left: 2%;
+        line-height: 2rem;
+        font-family: 'jul';
+        color: white;
+    }
+    .copyright{
+        position: absolute;
+        top:28vh;
+        font-size: 0.5rem;
+        font-family: 'jul';
+        color: white;
+        
+        
+    
+    }
+    .fe{
+        color: lightgray;
+        font-size: 0.8rem;
+    }
+    .contact{
+    
+        position: absolute;
+        width: 90%;
+        top: 25vh;
+        left: 2%;
+        font-family: 'jul';
+        color: white;
+        display: flex;
+        gap: 3vw;
+        font-size: 1.3rem;
+    
+    }
+    .contactoriginal{
+        position: absolute;
+        top: 2%;
+        left: 70%;
+        font-family: 'jul';
+        color: lightgray;
+    }
+    .contactoriginal div{
+        font-size: 1.8rem;
+        line-height: 3rem;
+    }
+    .contact a{
+        color: lightgray;
+        text-decoration-line: none;
+    
+    }
+    .mmlogo,.mnavbar,.mfooter,.mmydef,.mfe,.mcopyright,.mcontact,.mcontactoriginal.maboutme,.minformation,.mlanguage,.mlangaugeskill,.mlanguagecircle,.mbar,.mbar1,.mbar2,.mbar3,.mbar4,.mbar5,.mbar6,.mbar7,.mbar8,.mbar9,.mstatbox,.mstatgrade,.mstatbar,.mgradeview,.mstat,.mprojectstat,.mk,.mk1,.mk2,.mk3,.mk4,.mk5,.mk6,.mk7,.mk8,.mk9,.mk10,.mmain3,.mabout,.mmain,.mprofiletag,.maboutcont,.mk,.mheader1,.mheader2,.mname,.mmidname,.mlogo,.mlogo2,.mlogo3,.videocontent,.mvidcontainer,.mword,.minfo,.mcirclework.sec2.mmacbookpro,.mjs,.mreact,.mworkimgcontainer,.mbg,.miphone,.miphoneimg{
+        display: none;
+    }
+   //--------workpage
+   .workmain{
+    position: absolute;
+    width: 100%;
+    height: 40vh;
+    background: #141414;
+    
+   }
+   .worklogo{
+    position: fixed;
+    font-family: 'segoe';
+    color: #fff;
+    font-size: 1.7vw;
+    font-weight: bolder;
+    top: 2%;
+    left: 85%;
+    z-index: 9999;
+   }
+   .chome{
+    position: fixed;
+    font-family: 'segoe';
+    color: #fff;
+    font-size: 1.7vw;
+    font-weight: bolder;
+    top: 2%;
+    left: 75%;
+    z-index: 9999;
+   }
+    .workstitle{
+        font-family: 'jul';
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        font-size: 4rem;
+        font-weight: 300;
+        color: white;
+    }
+    .tkrhdrhkddufworks{
+        position: absolute;
+        top: 100%;
+        background: transparent;
+        width: 100%;
+        background:rgb(16,47,75);
+        height: 250vh;
+        overflow: hidden;
+       
+    }
+    .tkrhdrhkddufworks a{
+        text-decoration-line:none ;
+        color: #afd679;
+       
+    }
+    .workingimgcontainer{
+        position: absolute;
+        top: 5%;
+        left: 15%;
+        display: flex;
+        
+        flex-direction: column;
+       
+        gap: 50vh;
+        width: 30vw;
+        height: 70vh;
+
+    }
+    .img1work{
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+    }
+    
+    .workword1{
+        position: absolute;
+        font-family: 'jul';
+        width: 100%;
+        font-size: 1.7rem;
+        line-height:1.8;
+        font-weight: 400;
+        color: #87b1cb;
+        top: 30%;
+        left: 150%;
+    }
+    .img2work{
+        position: absolute;
+        left: 120%;
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+    }
+    .workword2{
+        position: absolute;
+        font-family: 'jul';
+        width: 100%;
+        font-size: 1.7rem;
+        line-height:1.8;
+        font-weight: 400;
+        color: rgb(154, 74, 192);
+        top: 210%;
+    }
+    .img3work{
+        position: absolute;
+        top: 370%;
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+    }
+    .workword3{
+        position: absolute;
+        font-family: 'jul';
+        width: 100%;
+        font-size: 1.7rem;
+        line-height:1.8;
+        font-weight: 400;
+        color: #97efb2;
+        top: 390%;
+        left: 150%;
+    }
+    .img4work{
+        position: absolute;
+        top: 550%;
+        left: 120%;
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+    }
+    .workword4{
+        position: absolute;
+        font-family: 'jul';
+        width: 100%;
+        font-size: 1.7rem;
+        line-height:1.8;
+        font-weight: 400;
+        color: rgb(243, 186, 134);
+        top: 570%;
+    }
+    .wfooter{
+        position: absolute;
+        top: 280%;
+        background: black;
+        width: 100%;
+        display: flex;
+        height: 30vh;
+        justify-content: center;
+    }
+    .wmydef{
+        position: absolute;
+        top: 2%;
+        left: 2%;
+        line-height: 2rem;
+        font-family: 'jul';
+        color: white;
+    }
+    .wcopyright{
+        position: absolute;
+        top:28vh;
+        font-size: 0.5rem;
+        font-family: 'jul';
+        color: white;
+        
+        
+    
+    }
+    .wfe{
+        color: lightgray;
+        font-size: 0.8rem;
+    }
+    .wcontact{
+    
+        position: absolute;
+        width: 90%;
+        top: 25vh;
+        left: 2%;
+        font-family: 'jul';
+        color: white;
+        display: flex;
+        gap: 3vw;
+        font-size: 1.3rem;
+    
+    }
+    .wcontactoriginal{
+        position: absolute;
+        top: 2%;
+        left: 70%;
+        font-family: 'jul';
+        color: lightgray;
+    }
+    .wcontactoriginal div{
+        font-size: 1.8rem;
+        line-height: 3rem;
+    }
+    .wcontact a{
+        color: lightgray;
+        text-decoration-line: none;
+    
+    }
+    
+
+}
+@media (max-width: 1024px) {
+    @font-face {
+        font-family: 'segoe';
+        src: url(./font/segoesc.ttf);
+        
+    }
+    @font-face {
+        font-family: 'hrc';
+        src: url(./font/HKGrotesk-Regular.woff);
+    }
+    @font-face {
+        font-family: 'jul';
+        src: url(./font/JuliusSansOne-Regular.ttf);
+    }
+    .preloader{
+        display: none;
+    }
+    .maincontainer{
+        display: none;
+    }
+    .mmain{
+        background-color: #f0f0ef;
+        height: 100vh;
+        width: 100%;
+    
+    }
+    .mnavbar a{
+        color: #000;
+        text-decoration-line:none ;
+    }
+    .mname{
+        position: absolute;
+        font-family: 'segoe';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        top: 41%;
+        font-size: 2.5rem;
+        font-weight: bold;
+    }.mmidname{
+        color: #e5e3e3;
+    }
+    .mbg{
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        height: 50%;
+        width: 50%;
+    }
+    .mlogo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'jul';
+        font-size: 3rem;
+        font-weight: bolder;
+        color: #484036;
+    }
+    .mlogo2{
+        position: absolute;
+        width: 100%;
+        top: 90%;
+        color: #484036;
+        font-size: 1.5rem;
+        font-family: 'jul';
+        font-weight: bolder;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mlogo3{
+        font-size: 1rem;
+    }
+    .sec2{
+        background-color: #191917;
+        width: 100%;
+        height: 70vh;
+    }
+    .videocontent{
+        position: absolute;
+        left: 25%;
+        top: 120%;
+        background: blue;
+        width: 50%;
+        height: 40%;
+        border-radius: 30px;
+    }
+    .mvidcontainer{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .mword{
+        position: absolute;
+        top: 150%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: 300;
+        font-size: 2rem;
+        font-family: 'jul';
+    }
+    .minfo{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        background: #fff;
+    }
+    .mcirclework{
+        position: absolute;
+        top: 197%;
+        left: 6%;
+        display: flex;
+        width: 10vw;
+        height: 5vh;
+        background: #fc4067;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+    .mab{
+        display: inline;
+       
+        font-weight: bold;
+        color: white;
+        font-family: 'jul';
+        letter-spacing: 0.1em;
+        font-weight: lighter;
+        font-size: 1.7vw;
+       
+    }
+    .mwrite{
+        position: absolute;
+        font-family: 'hrc';
+        top: 195%;
+        left: 20%;
+        font-size: 4.5vw;
+        font-weight: 400;
+        line-height: 1.1;
+        color: #373743;
+        letter-spacing: 0.09em;
+    }
+    .mworkstation{
+        
+
+        width: 100%;
+        height: 100%;
+    }
+    .mmacbookpro{
+        position: absolute;
+        width: 20%;
+        left: 37%;
+        top: 222%;
+        overflow: hidden;
+        transform: scale(5);
+    }
+    .mreact{
+        top: 222%;
+        left: 40%;
+        position: absolute;
+        width: 5%;
+       
+     
+       opacity: 0;
+    
+    }
+    .mjs{
+        top: 225%;
+        left: 40%;
+        position: absolute;
+        width: 5%;
+       
+     
+       opacity: 0;
+    
+    }
+    .mprojects{
+        position: absolute;
+        
+        top: 230%;
+        width: 100%;
+        
+    }
+    .mpborder{
+        position: absolute;
+        left:3%;
+        top: 233%;
+        width: 95%;
+        display: block;
+        border-bottom: 1px solid #000;
+    }
+    .mpcirc{
+        position: absolute;
+        top: 231%;
+        left: 3%;
+        background-color: black;
+        height: 1%;
+        width: 1%;
+        border-radius: 50%;
+    }
+    .mwordprojects{
+        position: absolute;
+        
+        font-size: 2vw;
+        left: 5%;
+        
+    }
+    .linkwork{
+        position: absolute;
+        left: 5%;
+        top: 250%;
+    }
+    .linkwork a{
+        text-decoration-line:none ;
+        color: black;
+    }
+    .linkwork span{
+        font-family: 'segoe';
+        font-size: 0.8rem;
+    }
+    .mprojectcontainer{
+        position: absolute;
+        width: 50%;
+        height: 40%;
+        top: 240%;
+        left: 40%;
+        cursor: pointer;
+        overflow-x: auto;
+        pointer-events: auto;
+        opacity:1;
+        
+    }
+    .mworkimgcontainer{
+        position: absolute;
+        display: flex;
+        gap: 1.6%;
+        font-family: 'jul';
+        pointer-events: none;
+        transition: 0s,ease-in;
+    }
+    .mworkimgsize{
+        
+       object-fit:fill;
+        width:55vw;
+       height: 30vh;
+       
+      
+     
+    }
+    .msortp{
+        position: absolute;
+        top: 245%;
+        left: 5%;
+        width: 20%;
+        
+        font-size: 2vw;
+        line-height: 0.1;
+        
+        border-bottom: 1px solid #000;
+    }
+    .msortw{
+        font-weight: bold;
+        font-family: 'hrc';
+        color:grey;
+    }
+    .mimgword{
+        position: absolute;
+        top: 80%;
+        
+
+     
+        display: flex;
+        
+    }
+    .mwordwork,.mwordweb1,.mwordweb2,.mwordgame1,.mwordgame2{
+        position: absolute;
+        top: 97%;
+    
+    }
+    .mwordwork{
+        left: 1%;
+    }
+    .mwordweb1{
+        left: 22%;
+        color: rgb(0, 153, 192);
+    }
+    .mwordweb2{
+    left: 87%;
+    
+    color: rgb(214, 160, 109);
+    }
+    .mwordgame1{
+    left:65%;
+    color: rgb(114, 198, 95);
+    }
+    .mwordgame2{
+        left: 44%;
+        color: rgb(112, 43, 252);
+    }
+    .mknowmore{
+        font-family: 'segoe';
+        position: absolute;
+        top: 296%;
+        z-index: 1;
+        font-size: 1.7vw;
+        left: 51%;
+        color: rgb(0, 153, 192);
+    }
+    .mExplore{
+        font-family: 'segoe';
+        position: absolute;
+        top: 298%;
+        z-index: 1;
+        font-size: 5vw;
+        color: rgb(112, 43, 252);
+        left: 50%;
+    }
+    .miphone{
+        position: absolute;
+        top: 284.25%;
+        width: 45%;
+        left: 3%;
+        z-index: 1;
+    
+    }
+    .miphonecontainer{
+        position: absolute;
+        top: 293%;
+        width: 16.5%;
+        height: 15%;
+        left: 17%;
+        z-index: 1;
+        overflow: hidden;
+        background: transparent;
+        
+    }
+    .miphoneimg{
+        width: 100%;
+        height: 100%;
+       
+    
+    }
+    .mheader1{
+        position: absolute;
+        top: 320%;
+        width: 100%;
+        height: 20vh;
+        overflow: hidden;
+    }
+    .mword2{
+        overflow: hidden;
+        position: absolute;
+        left: 20%;
+        font-family: 'hrc';
+        font-size: 4.5vw;
+        display: flex;
+        width: 100%;
+        z-index: 1;
+       
+        justify-content: right;
+       
+    }
+    .mheader2{
+        overflow: hidden;
+        position: absolute;
+        top: 325%;
+        left: 20%;
+        width: 80%;
+        height: 20vh;
+        z-index: 1;
+    }
+    .mword3{
+        overflow: hidden;
+        position: absolute;
+        top: 40%;
+        font-family: 'hrc';
+        font-size: 4.5vw;
+    
+      
+      
+    }
+    .mmain3{
+        position: absolute;
+        width: 100%;
+        height: 150vh;
+        overflow: hidden;
+    }
+    .mabout{
+        position: absolute;
+        top: 335%;
+        background: rgb(188, 188, 183);
+        width: 100%;
+        height: 138vh;
+        overflow: hidden;
+        
+    }
+    .mprofiletag{
+        position: absolute;
+        top: 10%;
+        left: 1%;
+        color: #17294d;
+        font-family: 'hrc';
+        font-size: 18vw;
+        letter-spacing: 0.2em;
+    }
+    .maboutme{
+        font-family: 'hrc';
+        left: 3%;
+        position: absolute;
+        top: 50%;
+        color: #17294d;
+        font-size: 2vw;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+    .maboutcont{
+        position: absolute;
+        width: 100%;
+        height: 50vh;
+        top: 33%;
+        display: flex;
+       
+        animation: slide 20s linear infinite; 
+    }
+    @keyframes slide {
+        0%{
+            transform: translate(0,0);
+        }
+        50%{
+            transform: translate(-80%,0);
+        }
+        100%{
+            transform: translate(3%,0);
+        }
+    }
+  
+    .mk{
+        position: absolute;
+        left: 7%;
+        height: 15vh;
+        width: 20vw;
+        opacity: 70%;
+        z-index: 1;
+    }
+    .mk1{
+        position: absolute;
+        top: 5%;
+    
+        height: 10vh;
+        left: 24%;
+    }
+    .mk2{
+        position: absolute;
+        opacity: 80%;
+        height: 15vh;
+        left: 38%;
+        z-index: 1;
+    }
+    .mk3{
+        position: absolute;
+        top: 5%;
+        opacity: 80%;
+        height: 10vh;
+        width: 17vw;
+        left: 60%;
+    }
+    .mk4{
+        position: absolute;
+        opacity: 80%;
+        height: 17vh;
+        left: 71%;
+        z-index: 1;
+    }
+    .mk5{
+        position: absolute;
+        opacity: 80%;
+        height: 6vh;
+        top: 10%;
+        left: 97%;
+       
+    }
+    .mk6{
+        position: absolute;
+        top: 5%;
+        opacity: 80%;
+        height: 10vh;
+        left: 105%;
+        
+    }
+    .mk7{
+        position: absolute;
+        top: 3%;
+        width: 20vw;
+        opacity: 80%;
+        height: 12vh;
+        left: 118%;
+        z-index: 2;
+        
+    }
+    .mk8{
+        position: absolute;
+        top: 7%;
+        opacity: 80%;
+        height: 7vh;
+        left: 137%;
+        z-index: 1;
+        
+    }
+    .mk9{
+        position: absolute;
+        top: 9%;
+        opacity: 80%;
+        height: 5vh;
+        left: 148%;
+        
+    }
+    .mk10{
+        position: absolute;
+        top: 2%;
+        opacity: 80%;
+        height: 20vh;
+        left: 155%;
+        
+    }
+    .minformation{
+        font-family: 'hrc';
+        position: absolute;
+        font-size: 2vw;
+        color: #17294d;
+        letter-spacing: 0.1em;
+        top:70%;
+        left: 50%;
+        text-transform: uppercase;
+        font-weight: 400;
+    
+    }
+    .mlanguage{
+        font-family: 'jul';
+        position: absolute;
+        font-size: 2vw;
+        width: 100%;
+        height: 50vh;
+        color: white;
+        letter-spacing: 0.1em;
+        top:78%;
+        text-transform: uppercase;
+        font-weight: 400;
+        background: #424959;
+    }
+    .mlangaugeskill{
+        position: absolute;
+        top: 5%;
+        left:3%;
+    }
+    .mlanguagecircle{
+        position: absolute;
+        font-size: 1.2vw;
+        top: 10%;
+        left:3%;
+        color: rgb(240, 240, 239);
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
+    }
+
+    .mbar{
+        position: absolute;
+        left: 105%;
+        margin-top: -10%;
+        gap: 1vh;
+        background-color: #0f1d36;
+        width: 70vw;
+        height: 0.5vh;
+        border-radius: 40vw;
+    }
+    .mbar1{
+        width: 0%;
+        height: 0.5vh;
+        background-color: #feb7b3;
+        border-radius: 40vw;
+    }
+    .mbar2{
+        width: 0%;
+        height: 0.5vh;
+        background-color: #abff32;
+        border-radius: 40vw;
+    
+    }
+    .mbar3{
+        width: 0%;
+        height: 0.5vh;
+        background-color: #d4ff32;
+        border-radius: 40vw;
+    }
+    .mbar4{
+        width: 0%;
+        height: 0.5vh;
+        background-color: #e9ff32;
+        border-radius: 40vw;
+    }
+    .mbar5{
+        width: 0%;
+        height: 0.5vh;
+        background-color: #97e5d7;
+        border-radius: 40vw;
+    }
+    .mbar6{
+        width: 0%;
+        height: 0.5vh;
+        background-color: #d2ebdb;
+        border-radius: 40vw;
+    }
+    .mbar7{
+        width: 0%;
+        height: 0.5vh;
+        background-color: #c1bbd0;
+        border-radius: 40vw;
+    }
+    .mbar8{
+        width: 0%;
+        height: 0.5vh;
+        background-color: #ffdcf4;
+        border-radius: 40vw;
+    }
+    .mbar9{
+        width: 0%;
+        height: 0.5vh;
+        background-color: #fad3cf;
+        border-radius: 40vw;
+    }
+    .mstatbox{
+        position: absolute;
+        background: #424959;
+        top: 472%;
+        width: 100%;
+        height: 50%;
+    }
+    svg{
+        position: absolute;
+        left:58%;
+        top: 13%;
+        width: 40%;
+        height: 50%;
+        
+    }
+    .mstatgrade{
+        position: absolute;
+        left: 80%;
+        top: 25%;
+        fill: none;
+        stroke-width: 10;
+        stroke: #000;
+        transform: translate(5px,5px);
+        stroke: #551d2e;
+        stroke-opacity: 70%;
+    }
+    .mstatbar{
+        position: absolute;
+        left: 50%;
+        top: 25%;
+       
+        fill: none;
+        transform: translate(5px,5px);
+        stroke-width:10;
+        stroke: #f34b7d;
+        stroke-dasharray: 442;
+        stroke-dashoffset: 442;
+        stroke-linecap: round;
+    }
+    .mgradeview{
+        position: absolute;
+        top: 25%;
+        left: 71%;
+        font-size: 2.5rem;
+        font-family: 'jul';
+        font-weight: bold;
+        color: white;
+    
+    }
+    .mstat{
+        position: absolute;
+        top: 4%;
+        left: 1%;
+        font-size: 1rem;
+        font-weight: 200;
+        color: white;
+        font-family: 'jul';
+    }
+    .mprojectstat{
+        position: absolute;
+        top: 25%;
+        font-size: 0.8rem;
+        left: 2%;
+        line-height: 200%;
+        color: lightgray;
+        font-family: 'jul';
+    }
+    .mfooter{
+        position: absolute;
+        top: 512%;
+        background: black;
+        width: 100%;
+        display: flex;
+        height: 40vh;
+        justify-content: center;
+    }
+    .mmydef{
+        position: absolute;
+        top: 2%;
+        left: 2%;
+        line-height: 2rem;
+        font-family: 'jul';
+        color: white;
+    }
+    .mcopyright{
+        position: absolute;
+        top:18vh;
+        font-size: 0.5rem;
+        font-family: 'jul';
+        color: white;
+        
+        
+    
+    }
+    .mfe{
+        color: lightgray;
+        font-size: 0.2rem;
+    }
+    .mcontact{
+    
+        position: absolute;
+        width: 90%;
+        top: 15vh;
+        left: 2%;
+        font-family: 'jul';
+        color: white;
+        display: flex;
+        gap: 3vw;
+        font-size: 0.4rem;
+    
+    }
+    .mcontactoriginal{
+        position: absolute;
+        top: 2%;
+        left: 60%;
+        font-family: 'jul';
+        color: lightgray;
+    }
+    .mcontactoriginal div{
+        font-size: 0.6rem;
+        line-height: 2rem;
+    }
+    .mcontact a{
+        color: lightgray;
+        text-decoration-line: none;
+    
+    }
+    .mcontactoriginal h1{
+        font-size: 0.3rem;
+    }
+    .mmlogo{
+        position: fixed;
+        font-family: 'segoe';
+        font-size: 1.7vw;
+        font-weight: bolder;
+        top: 2%;
+        left: 3%;
+        opacity: 0;
+        z-index: 9999;
+        
+    }
+    .mnavbar{
+        position: fixed;
+        font-family: 'segoe';
+        font-size: 1.7vw;
+        font-weight: bolder;
+        display: flex;
+        top: 2%;
+        gap: 2vw;
+        left: 72%;
+        opacity: 0;
+        list-style: none;
+        z-index: 9999;
+        
+    }
+    //work page/
+    .workmain{
+        position: absolute;
+        width: 100%;
+        height: 40vh;
+        background: #141414;
+        
+       }
+       .worklogo{
+        position: fixed;
+        font-family: 'segoe';
+        color: #fff;
+        font-size: 1.7vw;
+        font-weight: bolder;
+        top: 2%;
+        left: 75%;
+        z-index: 9999;
+       }
+       .chome{
+        position: fixed;
+        font-family: 'segoe';
+        color: #fff;
+        font-size: 1.7vw;
+        font-weight: bolder;
+        top: 2%;
+        left: 65%;
+        z-index: 9999;
+       }
+        .workstitle{
+            font-family: 'jul';
+            position: absolute;
+            top: 20%;
+            left: 10%;
+            font-size: 2rem;
+            font-weight: 300;
+            color: white;
+        }
+        .tkrhdrhkddufworks{
+            position: absolute;
+            top: 100%;
+            background: transparent;
+            width: 100%;
+            background:rgb(16,47,75);
+            height: 180vh;
+            overflow: hidden;
+           
+        }
+        .tkrhdrhkddufworks a{
+            text-decoration-line:none ;
+            color: #abff32;
+           
+        }
+        .workingimgcontainer{
+            position: absolute;
+            top: 5%;
+            left: 15%;
+            display: flex;
+            
+            flex-direction: column;
+           
+            gap: 20vh;
+            width: 35vw;
+            height: 90vh;
+    
+        }
+        .img1work{
+            width: 100%;
+            height:100%;
+            object-fit: cover;
+        }
+        
+        .workword1{
+            position: absolute;
+            font-family: 'jul';
+            width: 120%;
+            font-size: 0.7rem;
+            line-height:1.8;
+            font-weight: 400;
+            color: #87b1cb;
+            top: 8%;
+            left: 115%;
+        }
+        .img2work{
+            position: absolute;
+            left: 120%;
+            width: 35vw;
+            height:30vh;
+            object-fit: cover;
+        }
+        .workword2{
+            position: absolute;
+            font-family: 'jul';
+            width: 110%;
+            font-size: 0.7rem;
+            line-height:1.8;
+            font-weight: 400;
+            color: rgb(154, 74, 192);
+            top: 60%;
+        }
+        .img3work{
+            position: absolute;
+            top: 110%;
+            width: 35vw;
+            height:30vh;
+            object-fit: cover;
+        }
+        .workword3{
+            position: absolute;
+            font-family: 'jul';
+            width: 110%;
+            font-size: 0.7rem;
+            line-height:1.8;
+            font-weight: 400;
+            color: #97efb2;
+            top: 115%;
+            left: 120%;
+        }
+        .img4work{
+            position: absolute;
+            top: 165%;
+            left: 120%;
+            width: 35vw;
+            height:30vh;
+            object-fit: cover;
+        }
+        .workword4{
+            position: absolute;
+            font-family: 'jul';
+            width: 110%;
+            font-size: 0.7rem;
+            line-height:1.8;
+            font-weight: 400;
+            color: rgb(243, 186, 134);
+            top: 170%;
+        }
+        .wfooter{
+            position: absolute;
+            top: 200%;
+            background: black;
+            width: 100%;
+            display: flex;
+            height: 40vh;
+            justify-content: center;
+        }
+        .wmydef{
+            position: absolute;
+            top: 2%;
+            left: 2%;
+            line-height: 2rem;
+            font-family: 'jul';
+            color: white;
+        }
+        .wcopyright{
+            position: absolute;
+            top:18vh;
+            font-size: 0.5rem;
+            font-family: 'jul';
+            color: white;
+            
+            
+        
+        }
+        .wfe{
+            color: lightgray;
+            font-size: 0.2rem;
+        }
+        .wcontact{
+        
+            position: absolute;
+            width: 90%;
+            top: 15vh;
+            left: 2%;
+            font-family: 'jul';
+            color: white;
+            display: flex;
+            gap: 3vw;
+            font-size: 0.4rem;
+        
+        }
+        .wcontactoriginal{
+            position: absolute;
+            top: 2%;
+            left: 60%;
+            font-family: 'jul';
+            color: lightgray;
+        }
+        .wcontactoriginal div{
+            font-size: 0.6rem;
+            line-height: 2rem;
+        }
+        .wcontact a{
+            color: lightgray;
+            text-decoration-line: none;
+        
+        }
+        .wcontactoriginal h1{
+            font-size: 0.3rem;
+        }
+   
+}
