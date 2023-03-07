@@ -17,7 +17,7 @@
 나머지는 순수 자바스크립트를 사용해서 드래그 슬라이드 기능과 State상태를 이용해 스크롤시 애니메이션 효과 등을 사용했습니다.
 
 # Presentation
-<img src="https://user-images.githubusercontent.com/61825101/223335689-83ee9905-5350-4ac0-87d3-09a0218ffc89.gif" width=50% height=50%>
+<img src="https://user-images.githubusercontent.com/61825101/223337488-0855e529-54fa-4f43-9507-1cf89a728281.gif" width=50% height=50%>
 
 # Author
 Kwangyoul Sagong
