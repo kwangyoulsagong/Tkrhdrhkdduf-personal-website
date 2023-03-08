@@ -17,6 +17,7 @@
 나머지는 순수 자바스크립트를 사용해서 드래그 슬라이드 기능과 State상태를 이용해 스크롤시 애니메이션 효과 등을 사용했습니다.
 
 # Presentation
+깃헙 비디오 로드 속도가 느려서 실행되는 몇초 또는 몇분 소요 됩니다.
 <img src="https://user-images.githubusercontent.com/61825101/223337488-0855e529-54fa-4f43-9507-1cf89a728281.gif" width=50% height=50%>
 
 # Author
